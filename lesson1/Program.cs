@@ -84,12 +84,12 @@ Console.WriteLine("Введите трехзначное число");
 
 int number = int.Parse(Console.ReadLine());
 
-if (number < 100| number > 999)
+if (number < 100 | number > 999)
 {
-  Console.WriteLine("Недопустимое значение");  
-  return;
+    Console.WriteLine("Недопустимое значение");
+    return;
 }
 
 double result = (double)number % 10;
 
-Console.WriteLine(result);  
+Console.WriteLine(result);
