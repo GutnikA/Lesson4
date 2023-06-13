@@ -154,13 +154,13 @@ double DistanceBetweenTwoPoints(int x1, int y1, int x2, int y2)
 
 
 
-Console.WriteLine("Введите  число");
-Console.Write("number = ");
+ /* Console.WriteLine("Введите  число");
+ Console.Write("number = ");
 int n = int.Parse(Console.ReadLine());
 
-int[] result = PrintTableOfSquares(n);
+int[] result = PrintTableOfSquares(n);*/
 
-Console.WriteLine(string.Join(",",result)); // используется для вывода массива
+/*Console.WriteLine(string.Join(",",result)); // используется для вывода массива*/
 
 
 //void PrintTableOfSquares(int n)
@@ -171,7 +171,7 @@ Console.WriteLine(string.Join(",",result)); // используется для �
 //        Console.Write(" ");
 //    }
 //}
-
+/*
 int[] PrintTableOfSquares(int number)
 {
     int[] tableOfSquares = new int[number];
@@ -182,4 +182,31 @@ int[] PrintTableOfSquares(int number)
         tableOfSquares[i] = tmp * tmp;
     }
     return tableOfSquares;
+}
+*/
+
+
+
+
+//Задача 30: Напишите программу, которая выводит массив из 8 элементов,
+// заполненный нулями и единицами в случайном порядке.
+//[1,0,1,1,0,1,0,0]
+
+
+int length = int.Parse(Console.ReadLine());
+int[] array = GetRandomArray(length);
+
+Console.WriteLine(string.Join(",", array));
+
+int[] GetRandomArray(int length)
+{
+    int[] array = new int[length];
+
+    Random random = new Random();
+
+    for (var i = 0; i < array.Length; i++)
+    {
+        array[i] = random.Next(0, 2);
+    }
+    return array;
 }
