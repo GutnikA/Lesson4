@@ -188,7 +188,7 @@ int GetSumOfElementsOnDiagonal(int[,] array)
 
     return sum;
 }
-
+/*
 int Min(int value1, int value2){
     if(value1 > value2){
         return value2;
@@ -196,7 +196,7 @@ int Min(int value1, int value2){
 
     return value1;
 }
-
+*/
 
 
 int[,] GenerateRandom2DArray(int m, int n)
